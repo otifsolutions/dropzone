@@ -11,6 +11,13 @@
     ],
     "minimum-stability": "dev",
     "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Otif\\Dropzone\\DropzoneServiceProvider"
+            ]
+        }
+    },
     "autoload": {
         "psr-4": {
             "Otif\\Dropzone\\": "app/"
