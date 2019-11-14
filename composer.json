@@ -1,0 +1,19 @@
+{
+    "name": "otif/dropzone",
+    "description": "upload file by this package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "muhammadali266",
+            "email": "m.ali@otif-solutions.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Otif\\Dropzone\\": "app/"
+        }
+    }
+}
