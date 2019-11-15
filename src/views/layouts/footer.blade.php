@@ -1,1 +1,1 @@
-@include('layouts.include-js')
+@include('Dropzone::layouts.include-js')

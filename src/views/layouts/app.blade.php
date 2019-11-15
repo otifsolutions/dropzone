@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
 <head>
-    @include('layouts.head')
+    @include('Dropzone::layouts.head')
 </head>
 <body>
 <div class="container">
 
     <header class="row">
-        @include('layouts.header')
+        @include('Dropzone::layouts.header')
     </header>
 
     <div id="main" class="row">
@@ -17,7 +17,7 @@
     </div>
 
     <footer class="row">
-        @include('layouts.footer')
+        @include('Dropzone::layouts.footer')
     </footer>
 
 </div>

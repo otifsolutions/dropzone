@@ -15,7 +15,7 @@ class UploadFileController extends Controller
 
     public function getBaseLink()
     {
-        return "http://" . $_SERVER['SERVER_NAME'] . "/";
+        return "C://" . $_SERVER['SERVER_NAME'] . "/";
     }
     public function getAssetLink($id)
     {

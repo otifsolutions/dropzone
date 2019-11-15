@@ -2,7 +2,7 @@
 <meta name="description" content="">
 <meta name="author" content="Scotch">
 
-<title>Laravel Multiple Images Upload Using Dropzone</title>
+<title>Package for Dropzone</title>
 <meta name="_token" content="{{csrf_token()}}" />
 
-@include('layouts.include-css')
+@include('Dropzone::layouts.include-css')
