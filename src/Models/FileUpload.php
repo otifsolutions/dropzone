@@ -16,5 +16,10 @@ class FileUpload extends Model
     {
         return FileUpload::where('original_name','=',$name)->first();
     }
+    public function getAssetLink($id)
+    {
+        $file = FileUpload::where('id','=',$id)->first();
 
+        return asset('/images/'.$file->filename);
+    }
 }
