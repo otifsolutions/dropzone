@@ -1,6 +1,6 @@
 <?php
 
-namespace Otif\Dropzone\Models;
+namespace Otifsolutions\Dropzone\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -8,7 +8,7 @@ class FileUpload extends Model
 {
 
     //
-    protected $guarded=[];
+    protected $fillable=['filename','original_name'];
 
 
 

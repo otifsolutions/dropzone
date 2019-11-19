@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Otif\Dropzone;
+namespace Otifsolutions\Dropzone;
 use function Composer\Autoload\includeFile;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
@@ -15,19 +15,7 @@ class DropzoneServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
 
-//        Blade::if('dropzone', function () {
-//
-//echo"<div class=\"dropzone clsbox\" id=\"mydropzone\" data-toggle=\"dropzone\">
-//
-//        </div>";
-//
-//
-//
-//
-//
-//
-//
-//        });
+
     }
 
     public function register()

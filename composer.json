@@ -1,5 +1,5 @@
 {
-    "name": "otif/dropzone",
+    "name": "otifsolutions/dropzone",
     "description": "upload file by this package",
     "type": "library",
     "license": "MIT",
@@ -14,13 +14,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Otif\\Dropzone\\DropzoneServiceProvider"
+                "Otifsolutions\\Dropzone\\DropzoneServiceProvider"
             ]
         }
     },
     "autoload": {
         "psr-4": {
-            "Otif\\Dropzone\\": "src/"
+            "Otifsolutions\\Dropzone\\": "src/"
         }
     }
 }

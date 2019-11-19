@@ -1,21 +1,18 @@
 <?php
 
-namespace Otif\Dropzone\Http\Controllers;
+namespace Otifsolutions\Dropzone\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
 use Faker\Provider\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Otif\Dropzone\Models\FileUpload;
+use Otifsolutions\Dropzone\Models\FileUpload;
 
 class UploadFileController extends Controller
 {
 
-    public function dropzone()
-    {
-        return view('Dropzone::dropzone');
-    }
+
 
     public function destroy($id)
     {
@@ -33,10 +30,7 @@ class UploadFileController extends Controller
     {
         $image = $request->file('file');
         $imageName = $image->getClientOriginalName();
-//        $random = Str::random();
-//        $ext =  ".". $request->file('file')->extension();
 
-//        $filename = $random.$ext;
         $filename = Str::random().".". $request->file('file')->extension();
         $image->move(public_path('images'),$filename);
         FileUpload::create([
