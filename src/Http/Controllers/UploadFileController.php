@@ -12,8 +12,6 @@ use Otifsolutions\Dropzone\Models\FileUpload;
 class UploadFileController extends Controller
 {
 
-
-
     public function destroy($id)
     {
         $current = FileUpload::getFileByName($id);
@@ -33,12 +31,12 @@ class UploadFileController extends Controller
 
         $filename = Str::random().".". $request->file('file')->extension();
         $image->move(public_path('images'),$filename);
-        FileUpload::create([
+       $forresponse = FileUpload::create([
             'original_name' => $imageName,
             'filename'=> $filename,
 
         ]);
-        return response()->json(['success'=>$imageName]);
+        return response()->json(['success'=>$forresponse->id]);
     }
 
     public function fileDestroy(Request $request)
@@ -51,7 +49,5 @@ class UploadFileController extends Controller
         }
         return response()->json(['success'=> "DELETED"]);
     }
-
-
 
 }
